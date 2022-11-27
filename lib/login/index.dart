@@ -1,18 +1,18 @@
-// import 'package:flutter/cupertino.dart';
-// import 'package:flutter/material.dart';
-// import 'package:flutter/src/widgets/container.dart';
-// import 'package:flutter/src/widgets/framework.dart';
-// import 'package:hackathonuit2022_brainstorm_client_flutter/login/view/loginscreen.dart';
-// import 'package:hackathonuit2022_brainstorm_client_flutter/login/view/register.dart';
-// import 'package:animate_do/animate_do.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/container.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:hackathonuit2022_brainstorm_client_flutter/login/view/loginscreen.dart';
+import 'package:hackathonuit2022_brainstorm_client_flutter/login/view/register.dart';
+import 'package:animate_do/animate_do.dart';
 
-// class mainLogin extends StatefulWidget {
-//   @override
-//   State<mainLogin> createState() => _mainLoginState();
-// }
+class mainLogin extends StatefulWidget {
+  @override
+  State<mainLogin> createState() => _mainLoginState();
+}
 
-// bool click = true;
-// const backround = const Color(0xff00A182);
+bool click = true;
+const backround = const Color(0xff00A182);
 
 class _mainLoginState extends State<mainLogin> {
   @override
@@ -25,7 +25,7 @@ class _mainLoginState extends State<mainLogin> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            margin: const EdgeInsets.only(left: 40, right: 40,top: 120),
+            margin: const EdgeInsets.only(left: 40, right: 40, top: 120),
             padding: const EdgeInsets.only(left: 20, right: 20),
             decoration: BoxDecoration(
               color: Color.fromARGB(255, 255, 255, 255),
@@ -49,7 +49,7 @@ class _mainLoginState extends State<mainLogin> {
                       style: TextStyle(
                           fontSize: 18,
                           color: backround,
-                          fontWeight:click? FontWeight.bold:null),
+                          fontWeight: click ? FontWeight.bold : null),
                     ),
                   ),
                   TextButton(
@@ -63,10 +63,10 @@ class _mainLoginState extends State<mainLogin> {
                       style: TextStyle(
                           fontSize: 18,
                           color: backround,
-                          fontWeight: click ? null :FontWeight.bold),
+                          fontWeight: click ? null : FontWeight.bold),
                     ),
                   ),
-                ],  
+                ],
               ),
             ),
           ),
@@ -76,9 +76,8 @@ class _mainLoginState extends State<mainLogin> {
           Expanded(
             child: click ? loginScreen() : registerScreen(),
           )
-        ],    
+        ],
       ),
     );
   }
 }
-

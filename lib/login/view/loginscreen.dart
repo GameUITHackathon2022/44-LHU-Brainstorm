@@ -1,4 +1,3 @@
-
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -11,27 +10,26 @@ import 'package:hackathonuit2022_brainstorm_client_flutter/login/models/dto/req/
 import 'package:hackathonuit2022_brainstorm_client_flutter/login/view/loadpage.dart';
 import 'package:provider/provider.dart';
 
+class loginScreen extends StatefulWidget {
+  const loginScreen({super.key});
 
-// class loginScreen extends StatefulWidget {
-//   const loginScreen({super.key});
+  @override
+  State<loginScreen> createState() => _loginScreenState();
+}
 
-//   @override
-//   State<loginScreen> createState() => _loginScreenState();
-// }
+const mau = const Color(0xff00A182);
+bool isChecked = false;
+String? errorUser;
+String? errorPass;
+TextEditingController _tk = TextEditingController();
+TextEditingController _pass = TextEditingController();
+UserControllerr _user = UserControllerr();
+Login? _userOTD;
+String bug = 'Sai tài khoản hoặc mật khẩu ';
+String a = '';
 
-// const mau = const Color(0xff00A182);
-// bool isChecked = false;
-// String? errorUser;
-// String? errorPass;
-// TextEditingController _tk = TextEditingController();
-// TextEditingController _pass = TextEditingController();
-// UserControllerr _user = UserControllerr();
-// Login? _userOTD;
-// String bug = 'Sai tài khoản hoặc mật khẩu ';
-// String a = '';
-
-// Login? outStanding;
-// List<Login> list = [];
+Login? outStanding;
+List<Login> list = [];
 
 class _loginScreenState extends State<loginScreen> {
   @override
@@ -205,4 +203,3 @@ class _loginScreenState extends State<loginScreen> {
     );
   }
 }
-

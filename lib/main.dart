@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 
 import 'login/models/dto/login_model.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -30,7 +29,6 @@ class MyApp extends StatelessWidget {
         ),
         home: mainLogin(),
       ),
-
     );
   }
 }
