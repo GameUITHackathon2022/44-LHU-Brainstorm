@@ -1,0 +1,4 @@
+#Sun Nov 27 02:58:33 ICT 2022
+base.0=E\:\\frontend\\flutter\\hackathonuit2022_brainstorm_client_flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
