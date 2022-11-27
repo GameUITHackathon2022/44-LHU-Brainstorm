@@ -14,8 +14,7 @@ class ProfilePage extends StatefulWidget {
   State<ProfilePage> createState() => _ProfilePageState();
 }
 
-
-class _profileMainState extends State<profileMain> {
+class _ProfilePageState extends State<ProfilePage> {
   late LoginResDto user;
   Color mau = const Color(0xff00A182);
   @override
